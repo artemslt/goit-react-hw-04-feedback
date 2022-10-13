@@ -1,3 +1,9 @@
-export const Notification = ({ massege }) => {
-    return <p>{massege}</p>;
+import PropTypes from 'prop-types';
+
+export const Notification = ({ messege }) => {
+    return <p>{messege}</p>;
+};
+
+Notification.propTypes = {
+    messege: PropTypes.string,
 };
